@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     font-family: 'Bree Serif', serif;
 }
-p{
+
+p {
     font-family: 'Bree Serif', serif;
 }
-hr{
+
+hr {
     width: 70%;
-    margin: 50px auto;
+    margin: 50px auto!important;
 }
 
 /*HEADER GENERAL -------------------------------------------------------*/
 
 
-.header .navbar{
+.header .navbar {
     list-style: none;
     width: 100%;
     height: 5rem;
@@ -32,7 +34,7 @@ hr{
     background-color: rgb(210, 105, 30);
 }
 
-.header .carousel-inner{
+.header .carousel-inner {
     margin-top: 5rem;
 }
 
@@ -40,19 +42,22 @@ hr{
     height: 100%;
 
 }
+
 .header .carousel-inner .carousel-item .d-block {
     width: 100%;
     height: 20rem;
 }
 
+
 /*Media Queries Carousel*/
-@media(min-width: 667px){
-    .header .carousel-inner .carousel-item .d-block{
+@media(min-width: 667px) {
+    .header .carousel-inner .carousel-item .d-block {
         width: 100%;
         height: 35rem;
     }
 }
-@media(min-width: 900px){
+
+@media(min-width: 900px) {
 
     .header .carousel-inner .carousel-item .d-block {
         width: 80%;
@@ -60,19 +65,21 @@ hr{
         padding-top: 20px;
     }
 }
-@media(min-width: 1200px){
+
+@media(min-width: 1200px) {
 
     .header .carousel-inner .carousel-item .w-100 {
-        width: 90%!important;
+        width: 90% !important;
         margin: 0 auto;
     }
 
-    .header .slide .carousel-control-prev .carousel-control-prev-icon{
+    .header .slide .carousel-control-prev .carousel-control-prev-icon {
         padding: 1rem;
         border-radius: 50%;
         background-color: rgb(210, 105, 30);
     }
-    .header .slide .carousel-control-next .carousel-control-next-icon{
+
+    .header .slide .carousel-control-next .carousel-control-next-icon {
         padding: 1rem;
         border-radius: 50%;
         background-color: rgb(210, 105, 30);
@@ -80,55 +87,64 @@ hr{
 }
 
 /*---------------------------------------- Main inicio -----------------------------------------------*/
-.main{
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 100%;
     min-height: 50vh;
+    margin: 3rem;
 }
-.main h1{
-    margin-left: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
-.main p{
 
-    width: 50%;
-    height: 30%;
-    margin: 0 auto;
+.main h1 {
+    margin-bottom: 50px;
 }
-.main .img-inicio{
-    padding: 30px;
+
+.main p {
+    margin: auto;
+    margin-bottom: 2rem;
 }
-.main .img-inicio img{
-    width: 90%;
-    height: 10rem;
-    margin: 10px;
+.main .main__img img{
+    width: 100%;
+    padding: 5px;
+    gap: 5px;
 }
+
+@media(min-width:667px) {
+    .main .main__img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .main .main__img img{
+        width: 45%;
+        padding: 5px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+}
+
 
 
 
 /*---------------------------------------- Main Sobre Nosotros -----------------------------------------------*/
 
-.header-sn{
+.header-sn {
     height: 5rem;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 50vh;
 }
-.main h1{
-    margin-left: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
 
-.main .video h3{
+
+.main .video h3 {
     margin: 20px;
 }
 
-.main .video iframe{
+.main .video iframe {
     display: block;
     width: 60%;
     height: 60vh;
@@ -137,32 +153,34 @@ hr{
 
 /*---------------------------------------- Main Imagenes -----------------------------------------------*/
 
-.header-fotografias{
+.header-fotografias {
     height: 5rem;
 }
 
-.main .fotografias{
+.main .fotografias {
     width: 90%;
     margin: auto;
 
 }
-.main .fotografias .foto{
+
+.main .fotografias .foto {
     display: inline;
     padding: 20px;
 }
-.main .fotografias .foto img{
+
+.main .fotografias .foto img {
     width: 400px;
     height: 250px;
 }
 
-/*---------------------------------------- Main Cliente -----------------------------------------------*/ 
+/*---------------------------------------- Main Cliente -----------------------------------------------*/
 
-.header-clientes{
+.header-clientes {
     height: 5rem;
 
 }
 
-.main .clientes .cliente img{
+.main .clientes .cliente img {
     width: 200px;
     height: 160px;
     padding: 20px;
@@ -170,36 +188,40 @@ hr{
 
 /*---------------------------------------- Main Empleados -----------------------------------------------*/
 
-.header-empleados{
+.header-empleados {
     height: 5rem;
 
 }
-.main .empleados{
+
+.main .empleados {
     margin: 40px;
 
 }
-.main .empleados .empleado{
+
+.main .empleados .empleado {
     position: relative;
 }
 
-.main .empleados .empleado img{
+.main .empleados .empleado img {
     width: 500px;
     height: 250px;
 }
-.main  .empleados .empleado .redes-sociales{
+
+.main .empleados .empleado .redes-sociales {
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
-.main .empleados .empleado .redes-sociales img{
+
+.main .empleados .empleado .redes-sociales img {
     width: 3rem;
     height: 3rem;
 }
 
 /*  FOOTER GENERAL -------------------------------------------*/
-.footer  {
+.footer {
     width: 100%;
-    background-color: rgba(210, 105, 30,0.8);
+    background-color: rgba(210, 105, 30, 0.8);
     position: relative;
     display: flex;
     padding-top: 20px;
@@ -207,8 +229,9 @@ hr{
     justify-content: center;
     text-align: center;
 }
-@media(min-width: 667px){
-    .footer section{
+
+@media(min-width: 667px) {
+    .footer section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -217,7 +240,7 @@ hr{
 
 
 
-.footer .footer__title p{
+.footer .footer__title p {
     font-size: 20px;
     width: 80%;
     margin: 0 auto;
@@ -230,67 +253,74 @@ hr{
     flex-direction: column;
     align-items: center;
 }
-.footer .footer__contenido .footer__contenido__form label{
+
+.footer .footer__contenido .footer__contenido__form label {
     width: 15rem;
     margin: 10px;
 }
 
-.footer .footer__contenido textarea{
+.footer .footer__contenido textarea {
     width: 15rem;
     resize: none;
 }
 
 
-.footer .footer__contenido .footer__contenido__ubicacion{
+.footer .footer__contenido .footer__contenido__ubicacion {
     padding: 1rem;
     border-radius: 2px solid black;
 }
-.footer .footer__contenido .footer__contenido__ubicacion iframe{
+
+.footer .footer__contenido .footer__contenido__ubicacion iframe {
     margin-top: 2rem;
     width: 250px;
-    height: 250px;    
+    height: 250px;
 
 }
 
 /* Media Queries*/
-@media(min-width: 667px){
-    .footer .footer__contenido .footer__contenido__ubicacion iframe{
+@media(min-width: 667px) {
+    .footer .footer__contenido .footer__contenido__ubicacion iframe {
         width: 300px;
         height: 400px;
     }
 }
-@media(min-width: 800px){
-    .footer .footer__contenido .footer__contenido__ubicacion iframe{
+
+@media(min-width: 800px) {
+    .footer .footer__contenido .footer__contenido__ubicacion iframe {
         width: 400px;
         height: 450px;
     }
 }
-@media(min-width: 1100px){
-    .footer .footer__contenido .footer__contenido__ubicacion iframe{
+
+@media(min-width: 1100px) {
+    .footer .footer__contenido .footer__contenido__ubicacion iframe {
         width: 600px;
     }
 }
-@media(min-width: 1200px){
-    .footer .footer__contenido .footer__contenido__ubicacion iframe{
+
+@media(min-width: 1200px) {
+    .footer .footer__contenido .footer__contenido__ubicacion iframe {
         width: 750px;
     }
 }
 
-.footer .footer__other .footer__other__copyright{
+.footer .footer__other .footer__other__copyright {
     margin: 30px 0 0;
     color: black;
 }
-.footer .footer__other .footer__other__copyright span a{
+
+.footer .footer__other .footer__other__copyright span a {
     color: black;
 }
 
 
-.footer .footer__other .footer__redes-sociales{
+.footer .footer__other .footer__redes-sociales {
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
-.footer .footer__other .footer__redes-sociales img{
+
+.footer .footer__other .footer__redes-sociales img {
     width: 2rem;
     height: 2rem;
 }

@@ -94,7 +94,7 @@ hr {
     text-align: center;
     width: 100%;
     min-height: 50vh;
-    margin: 3rem;
+    margin-top: 3rem;
 }
 
 .main h1 {
@@ -105,13 +105,14 @@ hr {
     margin: auto;
     margin-bottom: 2rem;
 }
+
 .main .main__img img{
     width: 100%;
     padding: 5px;
     gap: 5px;
 }
-
-@media(min-width:667px) {
+/* Media Query img */
+@media( min-width : 667px) {
     .main .main__img {
         display: flex;
         justify-content: center;
@@ -125,30 +126,33 @@ hr {
     }
 }
 
-
-
-
 /*---------------------------------------- Main Sobre Nosotros -----------------------------------------------*/
 
 .header-sn {
     height: 5rem;
 }
-
-.main {
-    width: 100%;
-    min-height: 50vh;
-}
-
-
 .main .video h3 {
     margin: 20px;
 }
 
 .main .video iframe {
-    display: block;
-    width: 60%;
-    height: 60vh;
-    margin: 20px auto;
+    width: 70%;
+    height: 11rem;
+    margin: 0 auto;
+}
+
+/*Media Queries Carousel*/
+@media(min-width: 667px) {
+    .main .video iframe {
+        height: 20rem;
+    }
+}
+
+@media(min-width: 900px) {
+
+    .main .video iframe {
+        height: 60vh;
+    }
 }
 
 /*---------------------------------------- Main Imagenes -----------------------------------------------*/

@@ -1,0 +1,23 @@
+[33mcommit b338c9f36341e94c08ddbfef1a4c0944a2897296[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: GabrielR-Dev <gabrielomarrolon1996@gmail.com>
+Date:   Sun Sep 17 15:14:35 2023 -0300
+
+    Finalizado vista index (inicio)
+
+[33mcommit 2e8ea001c3b2631555d6d93e449f5b4f926de934[m
+Author: GabrielR-Dev <gabrielomarrolon1996@gmail.com>
+Date:   Sun Sep 17 11:14:00 2023 -0300
+
+    Implementando header y footer en todas las vistas.
+
+[33mcommit 0f271ef394e172fe485ef990598024f21851fb31[m
+Author: GabrielR-Dev <gabrielomarrolon1996@gmail.com>
+Date:   Sat Sep 16 22:40:05 2023 -0300
+
+    Refactorizando header, nav y footer.
+
+[33mcommit babb819466e4985d55605cf00b3676105e6332bd[m
+Author: GabrielR-Dev <gabrielomarrolon1996@gmail.com>
+Date:   Thu Sep 14 23:25:38 2023 -0300
+
+    First Commit

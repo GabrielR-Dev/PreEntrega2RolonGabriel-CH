@@ -136,7 +136,7 @@ hr {
 }
 
 .main .video iframe {
-    width: 70%;
+    width: 80%;
     height: 11rem;
     margin: 0 auto;
 }
@@ -149,33 +149,98 @@ hr {
 }
 
 @media(min-width: 900px) {
-
     .main .video iframe {
         height: 60vh;
     }
 }
 
-/*---------------------------------------- Main Imagenes -----------------------------------------------*/
+/*---------------------------------------- Main Galeria -----------------------------------------------*/
+.main_g{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 3rem;
+}
+.main_g .main__filtro{
 
-.header-fotografias {
-    height: 5rem;
+
+}
+.main_g .main__filtro__inputs{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.main_g .main__filtro__inputs label{
+    margin: 5px;
+}
+@media(min-width:667px){
+    .main_g .main__filtro__inputs{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media(min-width: 900px) {
+    .main_g .main__inputs{
+        width: 50%;
+    }
 }
 
-.main .fotografias {
-    width: 90%;
-    margin: auto;
+.main_g .main__filtro__inputs label {
+    background-color: rgba(210, 105, 30,0.8);
+    padding: 5px;
+    border-radius: 10px;
+}
+.main_g .main__filtro .main__filtro__galeria .main__galeria__img img{
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    cursor: pointer;
 
 }
-
-.main .fotografias .foto {
-    display: inline;
-    padding: 20px;
+.main_g .main__filtro__galeria .main__galeria__img img:hover{
+    border: 5px solid #fff;
+    opacity: 0.7;
+}
+input[type="radio"]{
+    display: none;
+}
+.bodas, .quince, .cumplemes, .fiestas, .bebes, .paisajes{
+    display: none;
 }
 
-.main .fotografias .foto img {
-    width: 400px;
-    height: 250px;
+#todas:checked ~ .main__filtro__galeria .bodas, 
+#todas:checked ~ .main__filtro__galeria .quince, 
+#todas:checked ~ .main__filtro__galeria .cumplemes, 
+#todas:checked ~ .main__filtro__galeria .fiestas, 
+#todas:checked ~ .main__filtro__galeria .paisajes {
+    display: flex;
 }
+#bodas:checked ~ .main__filtro__galeria .bodas,
+#quince:checked ~ .main__filtro__galeria .quince,
+#cumplemes:checked ~ .main__filtro__galeria .cumplemes,
+#fiestas:checked ~ .main__filtro__galeria .fiestas,
+#paisajes:checked ~ .main__filtro__galeria .paisajes
+{
+    display: flex;
+}
+#bodas:checked ~ .main__filtro__inputs label[for="bodas"],
+#quince:checked ~ .main__filtro__inputs label[for="quince"],
+#cumplemes:checked ~ .main__filtro__inputs label[for="cumplemes"],
+#fiestas:checked ~ .main__filtro__inputs label[for="fiestas"],
+#paisajes:checked ~ .main__filtro__inputs label[for="paisajes"],
+#todas:checked ~ .main__filtro__inputs label[for="todas"]{
+    background-color: rgba(210, 105, 30,0.3);;
+}
+
+
 
 /*---------------------------------------- Main Cliente -----------------------------------------------*/
 
